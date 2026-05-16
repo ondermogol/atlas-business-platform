@@ -6,15 +6,16 @@
     "packages/server",
     "packages/client"
   ],
-  "scripts": {
-    "dev": "turbo run dev --filter=@atlas-platform/client --filter=@atlas-platform/server --filter=@atlas-platform/shared",
-    "test": "turbo run test",
-    "test:e2e": "playwright test",
-    "build": "turbo run build",
-    "lint": "turbo run lint",
-    "typecheck": "turbo run typecheck",
-    "clean": "turbo run clean"
-  },
+"scripts": {
+  "dev": "turbo run dev --filter=@atlas-platform/client --filter=@atlas-platform/server --filter=@atlas-platform/shared",
+  "test": "turbo run test",
+  "test:e2e": "playwright test",
+  "build": "turbo run build",
+  "lint": "turbo run lint",
+  "typecheck": "turbo run typecheck",
+  "clean": "turbo run clean",
+  "start": "npm run start --workspace=@atlas-platform/server"
+}
   "packageManager": "npm@10.9.4",
   "overrides": {
     "@tiptap/extension-color": "2.27.2",
